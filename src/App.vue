@@ -1,24 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <Puzzle />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Puzzle from "./components/Puzzle.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld
+    Puzzle
   }
 };
 </script>
 
 <style lang="scss">
+body {
+  background: #000;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
