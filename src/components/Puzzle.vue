@@ -119,11 +119,14 @@ export default {
     justify-content: flex-start;
     flex-wrap: wrap;
     background: #5a331a;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     border: 3px solid #27160b;
-    width: 100%;
-    max-width: 26.8rem;
+    width: 26.8rem;
     padding: 1rem;
+
+    @media (max-width: 470px) {
+      width: 15rem;
+    }
 
     .puzzle-piece {
       display: flex;
@@ -137,6 +140,12 @@ export default {
       margin: 0.1rem;
       font-size: 30px;
       cursor: pointer;
+
+      @media (max-width: 470px) {
+        border-radius: 1rem;
+        width: 2.5rem;
+        height: 2.5rem;
+      }
       &.piece {
         border: 1px solid #5a331a;
         background: transparent;
@@ -153,6 +162,10 @@ export default {
     margin-top: 1rem;
     font-size: 20px;
     cursor: pointer;
+
+    @media (max-width: 470px) {
+      padding: 0.5rem 1rem;
+    }
   }
 }
 h3 {
