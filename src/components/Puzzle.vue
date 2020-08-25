@@ -138,7 +138,7 @@ export default {
       font-size: 30px;
       cursor: pointer;
       &.piece {
-        border: 0;
+        border: 1px solid #5a331a;
         background: transparent;
         color: transparent;
         cursor: default;
